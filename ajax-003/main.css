@@ -35,3 +35,8 @@ button{
   opacity: 1;
   padding: 20px 15px;
 }
+
+#price{
+  transition: color 1s;
+  font-size: 60px;
+}
