@@ -1,0 +1,56 @@
+/* General styling */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font: normal 16px Poppins;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#loading {
+  opacity: 1;
+  animation: 5s hideshow 0s infinite;
+}
+
+#qoute {
+  opacity: 0;
+  animation: 5s showhide 0s infinite;
+}
+
+@keyframes showhide {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes hideshow {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
